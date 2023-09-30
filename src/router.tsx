@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 const App = lazy(() => import("./App"));
 const Main = lazy(() => import("./routes/Main/Main"));
+const Shop = lazy(() => import("./routes/Shop/Shop"));
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense>
             <Main />
+          </Suspense>
+        ),
+      },
+      {
+        path: "shop",
+        element: (
+          <Suspense>
+            <Shop />
           </Suspense>
         ),
       },

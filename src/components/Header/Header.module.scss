@@ -1,4 +1,9 @@
 .header {
-    background: #000;
-    color: #fff;
+    max-width: 1296px;
+    border: 1px solid #fff;
+    margin: 55px auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
