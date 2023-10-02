@@ -38,6 +38,16 @@ p {
   line-height: 30px;
 }
 
+ol, ul {
+  padding-left: 25px;
+  margin: 0px;
+  line-height: 30px;
+
+  li {
+    margin-bottom: 15px;
+  }
+}
+
 .route {
   min-height: calc(100vh - 2em);
   padding-top: 180px;
