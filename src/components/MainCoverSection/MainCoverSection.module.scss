@@ -1,0 +1,26 @@
+.mainCoverSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  > div {
+    // border: 1px dashed red;
+  }
+
+  .text {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 80px;
+  }
+  .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+
+    > img {
+      max-height: 480px;
+    }
+  }
+}
