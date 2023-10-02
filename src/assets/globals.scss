@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
 
@@ -32,4 +36,5 @@ h2 {
 
 .route {
   min-height: calc(100vh - 2em);
+  padding-top: 180px;
 }
