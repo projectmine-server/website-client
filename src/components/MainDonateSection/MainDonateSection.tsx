@@ -7,14 +7,26 @@ export const MainDonateSection = () => {
       <div className={s.donateBorderWrapper}>
         <div className={s.donate}>
           <div className={s.images}>
-            <img draggable="false" src="/images/donate_pic_4.png" />
+            <img
+              draggable="false"
+              src="/images/donate_pic_4.png"
+              className={s.hue}
+            />
             <img
               draggable="false"
               src="/images/donate_pic_1.png"
               className={s.main}
             />
-            <img draggable="false" src="/images/donate_pic_2.png" />
-            <img draggable="false" src="/images/donate_pic_3.png" />
+            <img
+              draggable="false"
+              src="/images/donate_pic_2.png"
+              className={s.blink}
+            />
+            <img
+              draggable="false"
+              src="/images/donate_pic_3.png"
+              className={s.hue}
+            />
           </div>
           <div className={s.info}>
             <h2>Больше возможностей для своего персонажа</h2>
