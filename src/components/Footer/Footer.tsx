@@ -6,9 +6,9 @@ export const Footer = () => {
       <h2>mine!</h2>
       <center>
         <p>mine! - игровой сервер Minecraft. 3+</p>
-        <p>Все права защищены тыры-пыры то да сё</p>
+        <p>© 2023. Все права защищены.</p>
       </center>
-      <p>
+      <p className={s.email}>
         <b>support@projectmine.ru</b>
       </p>
     </footer>
