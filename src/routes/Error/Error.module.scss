@@ -1,0 +1,10 @@
+.route .errorSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+
+  code {
+    opacity: 0.2;
+  }
+}

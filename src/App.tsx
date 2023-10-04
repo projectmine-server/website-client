@@ -1,18 +1,17 @@
-import { Outlet, useRouteError } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Error from "./routes/Error/Error";
 
 interface AppProps {
   isError?: boolean;
 }
 
 export const App = ({ isError }: AppProps) => {
-  const routeError = useRouteError();
-
   return (
     <div>
       <Header />
-      {!isError ? <Outlet /> : JSON.stringify(routeError)}
+      {!isError ? <Outlet /> : <Error />}
       <Footer />
     </div>
   );
