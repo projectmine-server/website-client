@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import Section from "../Section/Section";
 import s from "./MainDonateSection.module.scss";
 
@@ -35,7 +36,7 @@ export const MainDonateSection = () => {
               и Diamond. Новые функции помогут быстрее и лучше развиваться на
               сервере, при этом не нарушая баланс экономики в игре. Попробуйте!
             </p>
-            <button>Прокачать персонажа</button>
+            <Button variant="secondary">Прокачать персонажа</Button>
           </div>
         </div>
       </div>
