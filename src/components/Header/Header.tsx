@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import s from "./Header.module.scss";
 import { useEffect, useState } from "react";
+import Button from "../Button/Button";
 
 export const Header = () => {
   const [isCompact, setIsCompact] = useState<boolean>(false);
@@ -27,12 +28,40 @@ export const Header = () => {
           <div>Minecraft 1.20</div>
         </div>
         <div className={s.links}>
-          <Link to={"/"}>Главная</Link>
-          <Link to={"/shop"}>FAQ</Link>
-          <Link to={"/shop"}>Магазин</Link>
-          <Link to={"/shop"}>ЛК</Link>
-          <Link to={"/shop"}>Discord</Link>
-          <button>Играть</button>
+          <NavLink to={"/"}>
+            {({ isActive }) => (
+              <Button variant="secondary" compact active={isActive}>
+                Главная
+              </Button>
+            )}
+          </NavLink>
+          <NavLink to={"/faq"}>
+            {({ isActive }) => (
+              <Button variant="secondary" compact active={isActive}>
+                FAQ
+              </Button>
+            )}
+          </NavLink>
+          <NavLink to={"/shop"}>
+            {({ isActive }) => (
+              <Button variant="secondary" compact active={isActive}>
+                Магазин
+              </Button>
+            )}
+          </NavLink>
+          <NavLink to={"/profile"}>
+            {({ isActive }) => (
+              <Button variant="secondary" compact active={isActive}>
+                ЛК
+              </Button>
+            )}
+          </NavLink>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <Button variant="secondary" compact>
+              Discord
+            </Button>
+          </a>
+          <Button compact>Играть</Button>
         </div>
       </div>
     </header>

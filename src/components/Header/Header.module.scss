@@ -32,22 +32,22 @@
         .links {
             display: flex;
             align-items: center;
-            gap: 60px;
+            gap: 20px;
 
             a {
                 color: unset;
                 text-decoration: none;
             }
 
-            button {
-                background: linear-gradient(0deg, #15803D, #15803D),
-                            linear-gradient(0deg, #16A34A, #16A34A);
-                border: 1px solid #16A34A;
-                border-radius: 15px;
-                padding: 5px 20px;
-                font: unset;
-                color: #fff;
-            }
+            // button {
+            //     background: linear-gradient(0deg, #15803D, #15803D),
+            //                 linear-gradient(0deg, #16A34A, #16A34A);
+            //     border: 1px solid #16A34A;
+            //     border-radius: 15px;
+            //     padding: 5px 20px;
+            //     font: unset;
+            //     color: #fff;
+            // }
         }
     }
 
