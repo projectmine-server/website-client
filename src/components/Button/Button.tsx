@@ -2,7 +2,7 @@ import { HTMLAttributes, ReactElement } from "react";
 import s from "./Button.module.scss";
 import { ArrowPathIcon, LockClosedIcon } from "@heroicons/react/20/solid";
 
-type ButtonVariant = "primary" | "secondary";
+type ButtonVariant = "primary" | "secondary" | "tretiary";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
