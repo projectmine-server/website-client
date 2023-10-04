@@ -1,0 +1,89 @@
+.button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  height: 60px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: #F8FAFC;
+  background: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 5px;
+  transition: 0.2s ease;
+
+  &.compact {
+    font-size: 16px;
+    height: 40px;
+    border-radius: 15px;
+  }
+
+  &.primary {
+    background: #15803D;
+    border: 1px solid #16A34A;
+
+    &:hover {
+      background: #16A34A;
+      border: 1px solid #22C55E;
+    }
+  }
+
+  &.secondary {
+    &:hover {
+      background: #F8FAFC1A;
+    }
+
+    &:active {
+      background: #F8FAFC;
+      color: #18181B;
+    }
+  }
+
+  &.disabled {
+    background: transparent;
+    border-color: transparent;
+    color: #D4D4D84D;
+
+    &:hover {
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+
+  &.loading {
+    opacity: 0.5;
+
+    .loader {
+      animation: loaderSpin 1s ease-in-out infinite;
+    }
+  }
+
+  .hoverIcon {
+    overflow: hidden;
+    height: 20px;
+    width: 0;
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .hoverIcon {
+      width: 20px;
+    }
+  }
+}
+
+@keyframes loaderSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
