@@ -30,34 +30,34 @@ export const Header = () => {
         <div className={s.links}>
           <NavLink to={"/"}>
             {({ isActive }) => (
-              <Button variant="secondary" compact active={isActive}>
+              <Button variant="tretiary" compact active={isActive}>
                 Главная
               </Button>
             )}
           </NavLink>
           <NavLink to={"/faq"}>
             {({ isActive }) => (
-              <Button variant="secondary" compact active={isActive}>
+              <Button variant="tretiary" compact active={isActive}>
                 FAQ
               </Button>
             )}
           </NavLink>
           <NavLink to={"/shop"}>
             {({ isActive }) => (
-              <Button variant="secondary" compact active={isActive}>
+              <Button variant="tretiary" compact active={isActive}>
                 Магазин
               </Button>
             )}
           </NavLink>
           <NavLink to={"/profile"}>
             {({ isActive }) => (
-              <Button variant="secondary" compact active={isActive}>
+              <Button variant="tretiary" compact active={isActive}>
                 ЛК
               </Button>
             )}
           </NavLink>
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <Button variant="secondary" compact>
+            <Button variant="tretiary" compact>
               Discord
             </Button>
           </a>
