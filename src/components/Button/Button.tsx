@@ -33,12 +33,22 @@ export const Button = ({
       }
       {...props}
     >
+      {/* Если кнопка выключена, показываем иконку замочка */}
       {disabled && <LockClosedIcon height={20} />}
+
       <span>{props.children}</span>
+
+      {/* Если есть иконка, показываем её только когда кнопка
+      не в состоянии загрузки и нет иконки, показывающейся только при ховере */}
       {icon && !loading && !hoverIcon && icon}
+
+      {/* Если есть иконка по ховеру и кнопка не в состоянии загрузки,
+      то показываем эту иконку */}
       {hoverIcon && !loading && (
         <span className={s.hoverIcon}>{hoverIcon}</span>
       )}
+
+      {/* Если кнопка в состоянии загрузки, показываем иконку-лоудер */}
       {loading && <ArrowPathIcon height={20} className={s.loader} />}
     </button>
   );
