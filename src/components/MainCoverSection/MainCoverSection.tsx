@@ -16,12 +16,14 @@ export const MainCoverSection = () => {
           место, где вы и ваши друзья смогут проводить время часами и не жалеть
           об этом. Включайтесь прямо сейчас!
         </p>
-        <p>
+        <div>
           <ButtonCopyIP>Начать играть</ButtonCopyIP>
-        </p>
+        </div>
       </div>
       <div className={s.picture}>
-        <img src="/images/chelik_1.png" alt="" />
+        <img src="/images/chelik_1.png" alt="" className={s.chelik1} />
+        <img src="/images/chelik_2.png" alt="" className={s.chelik2} />
+        <img src="/images/chelik_3.png" alt="" className={s.chelik3} />
       </div>
     </Section>
   );
