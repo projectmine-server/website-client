@@ -26,15 +26,16 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
+      {...props}
       className={
         `${s.button} ` +
         `${s[variant]} ` +
         `${compact ? s.compact : ""} ` +
         `${disabled ? s.disabled : ""} ` +
         `${loading ? s.loading : ""} ` +
-        `${active ? s.active : ""}`
+        `${active ? s.active : ""} ` +
+        `${props.className}`
       }
-      {...props}
     >
       {/* Если кнопка выключена, показываем иконку замочка */}
       {disabled && <LockClosedIcon height={20} />}
