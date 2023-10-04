@@ -9,6 +9,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   compact?: boolean;
   disabled?: boolean;
   loading?: boolean;
+  active?: boolean;
   icon?: ReactElement;
   hoverIcon?: ReactElement;
 }
@@ -18,6 +19,7 @@ export const Button = ({
   compact = false,
   disabled = false,
   loading = false,
+  active = false,
   icon,
   hoverIcon,
   ...props
@@ -29,7 +31,8 @@ export const Button = ({
         `${s[variant]} ` +
         `${compact ? s.compact : ""} ` +
         `${disabled ? s.disabled : ""} ` +
-        `${loading ? s.loading : ""} `
+        `${loading ? s.loading : ""} ` +
+        `${active ? s.active : ""}`
       }
       {...props}
     >

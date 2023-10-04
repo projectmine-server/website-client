@@ -7,7 +7,7 @@
   line-height: 24px;
   padding: 10px 20px;
   height: 60px;
-  min-width: 160px;
+  // min-width: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@
       background: #F8FAFC1A;
     }
 
-    &:active {
+    &:active, &.active {
       background: #F8FAFC;
       color: #18181B;
     }
