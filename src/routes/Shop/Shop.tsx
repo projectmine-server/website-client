@@ -1,5 +1,11 @@
+import Section from "../../components/Section/Section";
+
 export const Shop = () => {
-  return <div>Shop</div>;
+  return (
+    <div className="route shop">
+      <Section>Shop</Section>
+    </div>
+  );
 };
 
 export default Shop;
