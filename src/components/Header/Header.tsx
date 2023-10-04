@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import s from "./Header.module.scss";
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
+import ButtonCopyIP from "../Button/ButtonCopyIP";
 
 export const Header = () => {
   const [isCompact, setIsCompact] = useState<boolean>(false);
@@ -61,7 +62,7 @@ export const Header = () => {
               Discord
             </Button>
           </a>
-          <Button compact>Играть</Button>
+          <ButtonCopyIP compact>Играть</ButtonCopyIP>
         </div>
       </div>
     </header>
