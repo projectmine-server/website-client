@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    max-width: var(--page-width);
+    margin: 0px auto;
+    padding-bottom: 125px;
+
+    h2 {
+        font-size: 36px;
+        color: rgba(212, 212, 216, 0.1)
+    }
+
+    center p {
+        font-size: 14px;
+        line-height: 16.7px;
+        color: rgba(212, 212, 216, 0.1)
+    }
+
+    .email {
+        color: rgba(212, 212, 216, 0.2)
+    }
+}

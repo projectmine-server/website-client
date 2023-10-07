@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+
+  font-family: 'SF Pro Rounded', sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+  background: linear-gradient(180deg, #19191B 0%, #18181B 100%);
+  color: #D4D4D8;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  --page-width: 1296px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+
+  &.margin-bottom {
+    margin-bottom: 30px;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+
+p {
+  line-height: 30px;
+}
+
+ol, ul {
+  padding-left: 25px;
+  margin: 0px;
+  line-height: 30px;
+
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+.route {
+  // min-height: calc(100vh - 2em);
+  padding-top: 180px;
+}
